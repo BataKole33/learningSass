@@ -426,6 +426,7 @@ footer .container nav ul li a {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   font-weight: 700;
+  font-size: 1.8rem;
 }
 footer .container nav ul li a:hover, footer .container nav ul li a.active {
   color: #1cd83b;
@@ -440,9 +441,10 @@ footer .container p {
 @media (min-width: 768px) {
   footer .container nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
   }
   footer .container nav ul li a {
-    padding: 5px 5px;
+    padding: 5px 20px;
   }
 }/*# sourceMappingURL=theme.css.map */

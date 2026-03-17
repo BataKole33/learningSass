@@ -23,7 +23,7 @@ footer {
                         font-family: $footer-font;
                         text-align: center;
                         font-weight: $font-bold;
-
+                        font-size: 1.8rem;
                         &:hover,
                         &.active {
                             color: $footer-link-hover;
@@ -49,11 +49,12 @@ footer {
             nav {
                 ul {
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: center;
+                    align-items: center;
                     li {
-                        
+                         
                         a {
-                            padding: 5px 5px;
+                            padding: 5px 20px;
                         }
                     }
 
