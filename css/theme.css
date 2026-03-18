@@ -8,33 +8,51 @@
 }
 
 .btn-default {
-  background-color: #444444;
+  background-color: rgba(68, 68, 68, 0.8);
   color: #ffffff;
+}
+.btn-default:hover {
+  background-color: rgb(42.5, 42.5, 42.5);
 }
 
 .btn-danger {
   background-color: #aa191e;
   color: #ffffff;
 }
+.btn-danger:hover {
+  background-color: rgb(125.5384615385, 18.4615384615, 22.1538461538);
+}
 
 .btn-success {
   background-color: #1cd83b;
   color: #ffffff;
+}
+.btn-success:hover {
+  background-color: rgb(22.1475409836, 170.8524590164, 46.6680327869);
 }
 
 .btn-warning {
   background-color: #c26d1e;
   color: #ffffff;
 }
+.btn-warning:hover {
+  background-color: rgb(149.8303571429, 84.1830357143, 23.1696428571);
+}
 
 .btn-info {
   background-color: #05ddec;
   color: #000000;
 }
+.btn-info:hover {
+  background-color: rgb(3.9419087137, 174.2323651452, 186.0580912863);
+}
 
 .btn-dark {
   background-color: #000000;
   color: #ffffff;
+}
+.btn-dark:hover {
+  background-color: rgb(25.5, 25.5, 25.5);
 }
 
 /* FONT PROPERTY
@@ -415,7 +433,7 @@ header nav ul li a {
   font-weight: 700;
 }
 header nav ul li a:hover, header nav ul li a.active {
-  color: #1cd83b;
+  color: #3be209;
 }
 
 @media (min-width: 768px) {
@@ -471,7 +489,7 @@ footer .container nav ul li a {
   font-size: 1.8rem;
 }
 footer .container nav ul li a:hover, footer .container nav ul li a.active {
-  color: #1cd83b;
+  color: #3be209;
 }
 footer .container nav {
   margin-bottom: 30px;
