@@ -11,14 +11,27 @@ POZIVANJE:
     */
 
 @mixin radius($radius) {
-    border-radius: $radius;
+    @if ($enable-radius) {
+        border-radius: $radius;
+    }
+
+    @else {
+        border-radius: 0px;
+    }
 }
 
-@mixin customRadius($tl, $tr, $br, $bl){
-    border-radius: $tl $tr $br $bl;
+@mixin customRadius($tl, $tr, $br, $bl) {
+
+    @if ($enable-radius) {
+        border-radius: $tl $tr $br $bl;
+    }
+
+    @else {
+        border-radius: 0px;
+    }
 }
 
-@mixin styleSection($pt, $pb, $bg){
+@mixin styleSection($pt, $pb, $bg) {
     padding: $pt 0 $pb;
     background-color: $bg;
 }
