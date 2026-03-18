@@ -1,9 +1,20 @@
+/* MIXIN EXAMPLE
+@mixin name(){
+    .
+    .
+    .
+
+}
+
+POZIVANJE:
+@include name();
+    */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 .btn-dark, .btn-info, .btn-warning, .btn-success, .btn-danger, .btn-default {
   display: inline-block;
   padding: 10px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 5px 50% 5px 50%;
   cursor: pointer;
 }
 
@@ -410,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #b009e2;
 }
 header .branding {
@@ -454,22 +465,33 @@ header nav ul li a:hover, header nav ul li a.active {
     padding: 5px 15px;
   }
 }
+.home-section {
+  padding: 150px 0 150px;
+  background-color: #ffffff;
+}
+
 .about-section {
-  padding: 30px 0;
-  background: #ffffff;
+  padding: 30px 0 30px;
+  background-color: #ffffff;
 }
 
 .service-section {
-  padding: 30px 0;
+  padding: 30px 0 30px;
+  background-color: transparent;
 }
 
 .comment-section {
-  padding: 30px 0;
-  background: #ffffff;
+  padding: 30px 0 30px;
+  background-color: #ffffff;
+}
+
+.comment-img img {
+  border-radius: 50%;
 }
 
 .course-section {
-  padding: 50px 0;
+  padding: 30px 0 30px;
+  background-color: transparent;
 }
 .course-section table {
   width: 100%;
@@ -498,8 +520,13 @@ header nav ul li a:hover, header nav ul li a.active {
   background-color: rgb(199.75, 199.75, 199.75);
 }
 
+.contact-section {
+  padding: 150px 0 150px;
+  background-color: #ffffff;
+}
+
 footer {
-  padding: 30px 0;
+  padding: 30px 0 30px;
   background-color: #b009e2;
 }
 footer .container {

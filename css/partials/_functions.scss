@@ -1,0 +1,24 @@
+/* MIXIN EXAMPLE
+@mixin name(){
+    .
+    .
+    .
+
+}
+
+POZIVANJE:
+@include name();
+    */
+
+@mixin radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin customRadius($tl, $tr, $br, $bl){
+    border-radius: $tl $tr $br $bl;
+}
+
+@mixin styleSection($pt, $pb, $bg){
+    padding: $pt 0 $pb;
+    background-color: $bg;
+}
