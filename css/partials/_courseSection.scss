@@ -21,7 +21,7 @@ $default-thead-font-color: $white;
 
         thead {
             background-color: $default-thead-bg;
-            color: $default-thead-font-color;
+            color: colorYiq($default-thead-bg); 
 
             tr {
                 th {

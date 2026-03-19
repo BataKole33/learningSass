@@ -35,3 +35,20 @@ POZIVANJE:
     padding: $pt 0 $pb;
     background-color: $bg;
 }
+
+@function colorYiq($color) {
+    $r: red($color);
+    $g: green($color);
+    $b: blue($color);
+
+    $yiq: (
+        ($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+    @if ($yiq >=128) {
+        @return $black;
+    }
+
+    @else {
+        @return $white;
+    }
+}
