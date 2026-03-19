@@ -4,10 +4,43 @@ $comment-bg: $white;
     // padding: 30px 0;
     // background: $comment-bg;
     @include styleSection(30px, 30px, $comment-bg);
+
+    ol {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex;
+
+            a {
+                flex: 0 0 50px;
+            }
+
+            .comment-body {
+                padding-left: 15px;
+
+                h2 {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .comment-img {
+        img {
+            @include radius(50%);
+        }
+    }
 }
 
-.comment-img{
-    img{
-        @include radius(50%);
+@media (min-width: 768px) {
+    .comment-section{
+        ol {
+            li{
+                a{
+                    flex: 0 0 90px;
+                }
+            }
+        }
     }
 }

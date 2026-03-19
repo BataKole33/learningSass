@@ -25,7 +25,7 @@ $btn-dark: $black;
   display: inline-block;
   padding: 10px 25px;
   border: none;
-  border-radius: 0px;
+  border-radius: 5px 0 5px 0;
   cursor: pointer;
 }
 
@@ -561,11 +561,31 @@ header nav ul li a:hover, header nav ul li a.active {
   padding: 30px 0 30px;
   background-color: #ffffff;
 }
-
-.comment-img img {
-  border-radius: 0px;
+.comment-section ol {
+  list-style: none;
+  padding: 0;
+}
+.comment-section ol li {
+  display: flex;
+}
+.comment-section ol li a {
+  flex: 0 0 50px;
+}
+.comment-section ol li .comment-body {
+  padding-left: 15px;
+}
+.comment-section ol li .comment-body h2 {
+  margin-top: 0;
+}
+.comment-section .comment-img img {
+  border-radius: 50%;
 }
 
+@media (min-width: 768px) {
+  .comment-section ol li a {
+    flex: 0 0 90px;
+  }
+}
 .course-section {
   padding: 30px 0 30px;
   background-color: transparent;
@@ -600,6 +620,33 @@ header nav ul li a:hover, header nav ul li a.active {
 .contact-section {
   padding: 150px 0 150px;
   background-color: #ffffff;
+  background-image: url("../img/contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+.contact-section h2 {
+  text-align: center;
+}
+.contact-section form {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contact-section form .form-group {
+  margin-bottom: 1.5rem;
+}
+.contact-section form .form-group label {
+  display: block;
+}
+.contact-section form .form-group .form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 0px 10px;
+  line-height: 4rem;
+  border-radius: 5px;
 }
 
 footer {
